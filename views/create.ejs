@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <header>
+    <nav></nav>
+  </header>
+
+
+  <main>
+    <section class="container mt-3">
+      <form action="/save" method="post" autocomplete="off">
+        <div class="card">
+          <div class="card-header">
+            <a href="./" class="btn btn-sm btn-primary">Mostrar lista</a>
+          </div>
+
+          <div class="card-body" >
+            <div class="form-floating mb-3">
+              <input type="text" name="tipo" id="tipo" class="form-control" autofocus>
+              <label for="form-label">Tipo</label>
+            </div>
+
+            <div class="mb-3 form-floating">
+              <select class="form-control name="marca" id="marca">
+
+                <option value="">Seleccione</option>
+                <option value="Kia">Kia</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Javal">Javal</option>
+              </select>
+              <label for="form-label">Marca</label>
+            </div>
+
+            <div class="mb-3 form-label form-floating" >
+              <input type="text" name="tipo" id="tipo" class="form-control" autofocus>
+              <label for="form-label">Tipo</label>
+
+            </div>
+
+            <div class="mb-3 form-label form-floating" >
+              <input type="text" name="color" id="color" class="form-control" autofocus>
+              <label for="form-label">Color</label>
+
+            </div>
+
+
+
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+            <a href="/" class="btn btn-sm btn-secondary">Cancelar</a>
+          </div>
+          
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <p></p>
+  </footer>
+  
+</body>
+</html>
