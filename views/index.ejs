@@ -44,7 +44,7 @@
                                 <td><%= persona.telefono %></td>
                                 <td>
                                     <a href="./edit/<%= persona.id %>" class="btn btn-sm btn-info">Editar</a>
-                                    <a href="./delete" class="btn btn-sm btn-danger">Eliminar</a>
+                                    <a href="./delete/<%= persona.id %>" class="btn btn-sm btn-danger delete">Eliminar</a>
                                 </td>
                              </tr>
                             <% }) %>
@@ -58,6 +58,26 @@
 
     <footer></footer>
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+          const lnkEliminar = document.querySelectorAll(".delete");
+    
+          lnkEliminar.forEach(enlace => {
+            enlace.addEventListener("click", (event) => {
+              event.preventDefault();
+    
+              if(confirm("¿Está seguri de eliminar?")){
+                window.location.href = event.target.getAttribute('href');
+              }
+    
+            });
+            
+          });
+    
+        })
+      </script>
+    
     
 </body>
 </html>
