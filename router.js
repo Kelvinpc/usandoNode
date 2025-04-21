@@ -34,7 +34,7 @@ router.get('/edit/:id', (req, res) => {
     if(error){
        throw(error);
     }else{
-      res.render('edit', {personas: results [0]});
+      res.render('edit', {persona: results [0]});
     }
   });
 });

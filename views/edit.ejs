@@ -18,7 +18,7 @@
   <main>
     <section class="container mt-3">
       <form action="/update" id="formulario-registro" method="post" autocomplete="off">
-        <input type="hidden" name="id" id="id" value=" <%= vehiculo.id %> " >
+        <input type="hidden" name="id" id="id" value=" <%= persona.id %> " >
         <div class="card">
           <div class="card-header">
             <a href="./" class="btn btn-sm btn-primary">Mostrar lista</a>
@@ -28,17 +28,17 @@
 
                 <div class="card-body row">
                     <div class="form-floating mb-3 col-4">
-                      <input type="text" name="nombre" id="nombre" class="form-control" autofocus>
+                      <input type="text" name="nombre" id="nombre" value=" <%= persona.nombre %>" class="form-control" autofocus>
                       <label for="form-label"></label>
                     </div>
         
                     <div class="form-floating mb-3 col-4">
-                        <input type="text" name="apellido_PAT" id="apellido_PAT" class="form-control" >
+                        <input type="text" name="apellido_PAT" id="apellido_PAT" value="<%= persona.apellido_PAT %>" class="form-control" >
                         <label for="form-label">Apellido paterno</label>
                     </div>
         
                     <div class="form-floating mb-3 col-4">
-                        <input type="text" name="apellido_MAT" id="apellido_MAT" class="form-control" >
+                        <input type="text" name="apellido_MAT" id="apellido_MAT" <%= persona.apellido_MAT %> class="form-control" >
                         <label for="form-label">Apellido materno</label>
                     </div>
 
@@ -49,19 +49,19 @@
                 <div class="row">
 
                     <div class="form-floating mb-3 col-6">
-                        <input type="text" name="edad" id="edad" class="form-control" >
+                        <input type="text" name="edad" id="edad" value="<%= persona.edad %>" class="form-control" >
                         <label for="form-label">Edad</label>
                     </div>
         
                     <div class="form-floating mb-3 col-6">
-                        <input type="text" name="dni" id="dni" class="form-control" >
+                        <input type="text" name="dni" id="dni" value="<%= persona.dni %>" class="form-control" >
                         <label for="form-label">DNI</label>
                     </div>
 
                 </div>
 
             <div class="mb-3 form-label form-floating" >
-              <input type="text" name="telefono" id="telefono" minlength="9" maxlength="9" class="form-control" >
+              <input type="text" name="telefono" id="telefono" value="<%= persona.telefono %>" minlength="9" maxlength="9" class="form-control" >
               <label for="form-label">Telefono</label>
 
             </div>
@@ -85,5 +85,10 @@
     <p></p>
   </footer>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    });
+  </script>
 </body>
 </html>

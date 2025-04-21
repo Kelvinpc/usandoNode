@@ -39,7 +39,7 @@ exports.update= (req,res)=> {
 
   console.log(nombre, apellido_PAT, apellido_MAT, edad, dni, telefono);
 
-  conexion.query(`UPDATE vehiculos SET ? WHERE id = ?`,
+  conexion.query(`UPDATE persona SET ? WHERE id = ?`,
     [{nombre: nombre, apellido_PAT: apellido_PAT, apellido_MAT: apellido_MAT, edad: edad, dni: dni, telefono: telefono}, id], (error ,results) =>{
       if (error) {
         console.log(error)
