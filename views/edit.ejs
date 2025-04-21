@@ -18,7 +18,7 @@
   <main>
     <section class="container mt-3">
       <form action="/update" id="formulario-registro" method="post" autocomplete="off">
-        <input type="hidden" name="id" id="id" value=" <%= persona.id %> " >
+        <input type="hidden" name="id" id="id" value="<%=persona.id %> " >
         <div class="card">
           <div class="card-header">
             <a href="./" class="btn btn-sm btn-primary">Mostrar lista</a>
@@ -28,17 +28,17 @@
 
                 <div class="card-body row">
                     <div class="form-floating mb-3 col-4">
-                      <input type="text" name="nombre" id="nombre" value=" <%= persona.nombre %>" class="form-control" autofocus>
+                      <input type="text" name="nombre" id="nombre" value="<%= persona.nombre %>" class="form-control" autofocus>
                       <label for="form-label"></label>
                     </div>
         
                     <div class="form-floating mb-3 col-4">
-                        <input type="text" name="apellido_PAT" id="apellido_PAT" value="<%= persona.apellido_PAT %>" class="form-control" >
+                        <input type="text" name="apellido_PAT" id="apellido_PAT" value="<%=persona.apellido_PAT %>" class="form-control" >
                         <label for="form-label">Apellido paterno</label>
                     </div>
         
                     <div class="form-floating mb-3 col-4">
-                        <input type="text" name="apellido_MAT" id="apellido_MAT" <%= persona.apellido_MAT %> class="form-control" >
+                        <input type="text" name="apellido_MAT" id="apellido_MAT" value="<%= persona.apellido_MAT %>" class="form-control" >
                         <label for="form-label">Apellido materno</label>
                     </div>
 
@@ -84,11 +84,6 @@
   <footer>
     <p></p>
   </footer>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
 
-    });
-  </script>
 </body>
 </html>
