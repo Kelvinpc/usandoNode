@@ -12,7 +12,7 @@ exports.save= (req,res)=> {
 
   //NOTA: se debe especificar como capturar los datos de los <form></form> app.js
   //evidencia de captura de datos
-  console.log(tipo, marca, color);
+  console.log(nombre, apellido_PAT, apellido_MAT, edad, dni, telefono);
 
   conexion.query(`INSERT INTO persona SET ?`,
     {nombre: nombre, apellido_PAT: apellido_PAT, apellido_MAT: apellido_MAT, edad: edad, dni: dni, telefono: telefono}, (error ,results) =>{

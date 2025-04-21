@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <header>
+    <nav></nav>
+  </header>
+
+
+  <main>
+    <section class="container mt-3">
+      <form action="/save" method="post" autocomplete="off">
+        <div class="card">
+          <div class="card-header">
+            <a href="./" class="btn btn-sm btn-primary">Mostrar lista</a>
+          </div>
+
+
+
+                <div class="card-body row">
+                    <div class="form-floating mb-3 col-4">
+                      <input type="text" name="nombre" id="nombre" class="form-control" autofocus>
+                      <label for="form-label"></label>
+                    </div>
+        
+                    <div class="form-floating mb-3 col-4">
+                        <input type="text" name="apellido_PAT" id="apellido_PAT" class="form-control" >
+                        <label for="form-label">Apellido paterno</label>
+                    </div>
+        
+                    <div class="form-floating mb-3 col-4">
+                        <input type="text" name="apellido_MAT" id="apellido_MAT" class="form-control" >
+                        <label for="form-label">Apellido materno</label>
+                    </div>
+
+
+
+
+
+                <div class="row">
+
+                    <div class="form-floating mb-3 col-6">
+                        <input type="text" name="edad" id="edad" class="form-control" >
+                        <label for="form-label">Edad</label>
+                    </div>
+        
+                    <div class="form-floating mb-3 col-6">
+                        <input type="text" name="dni" id="dni" class="form-control" >
+                        <label for="form-label">DNI</label>
+                    </div>
+
+                </div>
+
+            <div class="mb-3 form-label form-floating" >
+              <input type="text" name="telefono" id="telefono" minlength="9" maxlength="9" class="form-control" >
+              <label for="form-label">Telefono</label>
+
+            </div>
+
+          </div>
+
+          <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+            <a href="/" class="btn btn-sm btn-secondary">Cancelar</a>
+          </div>
+          
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <p></p>
+  </footer>
+  
+</body>
+</html>
